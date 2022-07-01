@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ShootingGame_kym
 {
@@ -25,7 +26,7 @@ namespace ShootingGame_kym
             Console.SetWindowSize(width, height); // 창 크기 설정
             Console.ForegroundColor = ConsoleColor.Black;
             Console.BackgroundColor = ConsoleColor.Gray; // 배경 색 설정(흰색)
-            Console.Clear(); // 클리어
+            Console.Clear();
             Console.CursorVisible = false; // 커서 숨김
         }
         public static bool Start()
@@ -72,7 +73,7 @@ namespace ShootingGame_kym
             Console.WriteLine("Game Over");
             Console.WriteLine();
             Console.Write("\t\t     ");
-            Console.WriteLine("Your Score : " + Frame.score);
+            Console.WriteLine("Your Score : " + ScoreLife.score);
             Console.WriteLine("===========================================================");
             LineSpace();
             LineSpace();

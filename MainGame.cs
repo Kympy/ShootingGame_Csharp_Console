@@ -7,8 +7,7 @@ namespace ShootingGame_kym // MainGame 을 상속 받는 Frame을 중심으로 �
 {
     public class MainGame // 메인 클래스
     {
-        const int waitTick = 1000 / 60; // 60 프레임(10FPS)
-
+        const int waitTick = 1000 / 40; // 60 프레임(60FPS)
         static void Main(string[] args)
         {
             int lastTick = 0; // 마지막 틱
@@ -31,6 +30,7 @@ namespace ShootingGame_kym // MainGame 을 상속 받는 Frame을 중심으로 �
                     lastTick = currentTick;
                     if (ScoreLife.lifeCount == 0) // 목숨이 0 이면
                     {
+                        KeyInput.ClearBuffer();
                         Init.EndGame(); // 종료 화면
                         continue;
                     }

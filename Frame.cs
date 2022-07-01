@@ -6,30 +6,16 @@ using System.Threading.Tasks;
 
 namespace ShootingGame_kym
 {
-    internal class Frame : MainGame // 프레임 갱신 클래스
+    internal class Frame : Position // 프레임 갱신 클래스
     {
         // Size
         public static int row = 45; // 표시할 행과 열의 수
         public static int column = 60;
         // Pixel
         public static char[,] pixel = new char[row, column]; // 표시할 픽셀 2차원 배열
-        // Position
-        // Player
-        public static int[] playerPos = { 38, 28 }; // 플레이어 현 위치
-        public static int[] playerBodyPos = { playerPos[0] + 1, playerPos[1] };
-        public static int[] playerBody2Pos = { playerPos[0] + 2, playerPos[1] };
-        public static int[] playerTailPos = { playerPos[0] + 3, playerPos[1] };
-        public static int[] playerWingPos_L = { playerBodyPos[0], playerPos[1] - 1 };
-        public static int[] playerWingPos_R = { playerBodyPos[0], playerPos[1] + 1 };
-        public static int lifeCount = 3; // 목숨 갯수
-        // Bullet
-        public static int[] bulletPos_L = { playerPos[0] - 1, playerPos[1] - 1 }; // 총알의 현 위치
-        public static int[] bulletPos_R = { playerPos[0] - 1, playerPos[1] + 1}; // 총알의 현 위치
-        //Enemy
-        public static int[] enemyPos = { 2, 28 }; // 적의 현 위치
-        public static int[] enemyBulletPos = { enemyPos[0] + 1, enemyPos[1] }; // 적 총알 위치
+
         // Game Info
-        public static int score = 0; // 점수 저장 변수
+        public static bool isSkill = false;
         public static bool isAttack = false; // 발사 중인지 체크
         //public static bool finishDraw = false;
 
@@ -39,6 +25,7 @@ namespace ShootingGame_kym
 
             Move.CheckMap(); // 맵 끝 체크
 
+            Skill.MoveSkill();
             Bullet.MoveEnemyBullet(); // 적 총알 이동
             Bullet.MoveBullet(); //  내 총알 이동
 
@@ -55,8 +42,20 @@ namespace ShootingGame_kym
                     {
                         pixel[i, j] = '■'; // 바닥
                     }
+                    else if(i == skillPos_Top[0] && j == skillPos_Top[1])
+                    {
+                        pixel[i, j] = '★';
+                    }
+                    else if(i < skillPos_Top[0] && i >= skillPos_Lpoint[0])
+                    {
+                        if(j >= skillPos_Lpoint[1] && j <= skillPos_Rpoint[1])
+                        {
+                            pixel[i, j] = '★';
+                        }
+                    }
                     else if ((i == bulletPos_L[0] && j == bulletPos_L[1] && isAttack == true)
-                        || (i == bulletPos_R[0] && j == bulletPos_R[1] && isAttack == true))// 총알 위치라면
+                        || (i == bulletPos_R[0] && j == bulletPos_R[1] && isAttack == true)
+                        || (i == bulletPos[0] && j == bulletPos[1] && isAttack == true))// 총알 위치라면
                     {
                         pixel[i, j] = '♠'; // 총알 그림 대입
                     }
@@ -100,6 +99,13 @@ namespace ShootingGame_kym
                         (i == bulletPos_R[0] && j == bulletPos_R[1] && isAttack == true))// 총알 위치라면
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write(pixel[i, j]);
+                        Console.ResetColor();
+                        Console.BackgroundColor = ConsoleColor.DarkCyan;
+                    }
+                    else if (pixel[i, j] == '★')
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.Write(pixel[i, j]);
                         Console.ResetColor();
                         Console.BackgroundColor = ConsoleColor.DarkCyan;

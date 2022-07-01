@@ -31,7 +31,25 @@ namespace ShootingGame_kym
                 {
                     Move.MovePlayerLeft();
                 }
-
+                myKey = GetAsyncKeyState((int)ConsoleKey.D);
+                if((myKey & 0x8000) == 0x8000)
+                {
+                    if(isSkill == true)
+                    {
+                        return;
+                    }
+                    else
+                    {
+                        isSkill = true;
+                    }
+                }
+            }
+        }
+        public static void ClearBuffer()
+        {
+            while (Console.KeyAvailable)
+            {
+                Console.ReadKey(false);
             }
         }
     }
