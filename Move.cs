@@ -47,7 +47,7 @@ namespace ShootingGame_kym
             playerWingPos_L[1] += 1;
             playerWingPos_R[1] += 1;
         }
-        public static void CheckMap()
+        public static void CheckMap() // 맵 범위 체크
         {
             // 만약 적 또는 플레이어가 화면 사이즈 밖으로 벗어나게 된다면, 가장 자리에 위치를 Fix 시킴.
             if (enemyPos[1] <= 0) // 좌측 제한
