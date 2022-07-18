@@ -1,0 +1,15 @@
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\bin\Debug\net6.0-windows\ShootingGame_kym.exe
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\bin\Debug\net6.0-windows\ShootingGame_kym.deps.json
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\bin\Debug\net6.0-windows\ShootingGame_kym.runtimeconfig.json
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\bin\Debug\net6.0-windows\ShootingGame_kym.dll
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\bin\Debug\net6.0-windows\ShootingGame_kym.pdb
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.csproj.AssemblyReference.cache
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.AssemblyInfoInputs.cache
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.AssemblyInfo.cs
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.csproj.CoreCompileInputs.cache
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.dll
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\refint\ShootingGame_kym.dll
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.pdb
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ShootingGame_kym.genruntimeconfig.cache
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\net6.0-windows\ref\ShootingGame_kym.dll

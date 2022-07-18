@@ -25,7 +25,7 @@ namespace ShootingGame_kym
 
             Move.CheckMap(); // 맵 끝 체크
 
-            Skill.MoveSkill();
+            //Skill.MoveSkill();
             Bullet.MoveEnemyBullet(); // 적 총알 이동
             Bullet.MoveBullet(); //  내 총알 이동
 
@@ -42,6 +42,7 @@ namespace ShootingGame_kym
                     {
                         pixel[i, j] = '■'; // 바닥
                     }
+                    /*
                     else if(i == skillPos_Top[0] && j == skillPos_Top[1])
                     {
                         pixel[i, j] = '★';
@@ -53,6 +54,7 @@ namespace ShootingGame_kym
                             pixel[i, j] = '★';
                         }
                     }
+                    */
                     else if ((i == bulletPos_L[0] && j == bulletPos_L[1] && isAttack == true)
                         || (i == bulletPos_R[0] && j == bulletPos_R[1] && isAttack == true)
                         || (i == bulletPos[0] && j == bulletPos[1] && isAttack == true))// 총알 위치라면
@@ -102,14 +104,14 @@ namespace ShootingGame_kym
                         Console.Write(pixel[i, j]);
                         Console.ResetColor();
                         Console.BackgroundColor = ConsoleColor.DarkCyan;
-                    }
+                    }/*
                     else if (pixel[i, j] == '★')
                     {
                         Console.ForegroundColor = ConsoleColor.DarkYellow;
                         Console.Write(pixel[i, j]);
                         Console.ResetColor();
                         Console.BackgroundColor = ConsoleColor.DarkCyan;
-                    }
+                    }*/
                     else if (i == enemyBulletPos[0] && j == enemyBulletPos[1])
                     {
                         Console.ForegroundColor = ConsoleColor.DarkRed;

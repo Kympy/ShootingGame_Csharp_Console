@@ -1,0 +1,5 @@
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\netcoreapp3.1\ShootingGame_kym.csproj.AssemblyReference.cache
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\netcoreapp3.1\ShootingGame_kym.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\netcoreapp3.1\ShootingGame_kym.AssemblyInfoInputs.cache
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\netcoreapp3.1\ShootingGame_kym.AssemblyInfo.cs
+C:\Users\gftr9\Desktop\03_점점진화하는슈팅게임\ShootingGame_kym\obj\Debug\netcoreapp3.1\ShootingGame_kym.csproj.CoreCompileInputs.cache

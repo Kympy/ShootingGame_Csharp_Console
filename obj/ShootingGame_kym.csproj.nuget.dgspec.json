@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\02슈팅게임_완성\\ShootingGame_kym\\ShootingGame_kym.csproj": {}
+    "C:\\Users\\User\\Downloads\\ShootingGame_Csharp_Console\\ShootingGame_kym\\ShootingGame_kym.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\02슈팅게임_완성\\ShootingGame_kym\\ShootingGame_kym.csproj": {
+    "C:\\Users\\User\\Downloads\\ShootingGame_Csharp_Console\\ShootingGame_kym\\ShootingGame_kym.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\02슈팅게임_완성\\ShootingGame_kym\\ShootingGame_kym.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Downloads\\ShootingGame_Csharp_Console\\ShootingGame_kym\\ShootingGame_kym.csproj",
         "projectName": "ShootingGame_kym",
-        "projectPath": "C:\\Users\\User\\Desktop\\02슈팅게임_완성\\ShootingGame_kym\\ShootingGame_kym.csproj",
+        "projectPath": "C:\\Users\\User\\Downloads\\ShootingGame_Csharp_Console\\ShootingGame_kym\\ShootingGame_kym.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\02슈팅게임_완성\\ShootingGame_kym\\obj\\",
+        "outputPath": "C:\\Users\\User\\Downloads\\ShootingGame_Csharp_Console\\ShootingGame_kym\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

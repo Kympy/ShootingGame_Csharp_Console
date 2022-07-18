@@ -23,7 +23,7 @@ namespace ShootingGame_kym // MainGame 을 상속 받는 Frame을 중심으로 �
             Init.InitWindow(); // 윈도우 창 초기화
             while (true)// 반복
             {
-                currentTick = System.Environment.TickCount; // 현재 시간
+                currentTick = System.Environment.TickCount & Int32.MaxValue; // 현재 시간
                 if (currentTick - lastTick < waitTick) continue; // 경과 시간이 1 / 60 초 보다 작다면 실행 건너뜀
                 else // 조건 만족 시
                 {
